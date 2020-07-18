@@ -1,0 +1,138 @@
+:root {
+    --theme-color: #ED3835;
+    --theme-color-light: #ED383526;
+    --theme-color-100: #ED3835;
+    --theme-color-75: #ED383590;
+    --theme-color-50: #ED383580;
+    --theme-color-25: #ED383570;
+
+}
+*{
+box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Uniform', sans-serif;
+    margin: 0 auto;
+    color: #555555;
+    text-decoration: none;
+    max-width: 450px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+a {
+    text-decoration: none;
+	color: var(--theme-color);
+	animation-duration: 1s;
+}
+
+.page-wrapper{
+border: 5px solid var(--theme-color);
+}
+.coro {
+	width: 0;
+	height: 0;
+	border-top: 210px solid var(--theme-color);
+	border-right: 290px solid transparent;
+	position: absolute;
+	z-index: 1;
+}
+
+.upper-area{
+	display: flex;
+}
+
+.logo {
+	position: relative;
+	margin: auto;
+	width: 35%;
+	z-index: 2;
+}
+
+.logo img {
+	position: absolute;
+	top: 59px;
+	left: 17px;
+	width: 78%;
+}
+.rightside{
+	width: 5%;
+}
+
+.user {
+	display: flex;
+	margin-top: 26px;
+	position: relative;
+}
+.icon-area {
+	width: 57px;
+}
+.icon-content-area {
+	width: calc(100% - 57px);
+	align-self: center;
+	line-height: 1px;
+}
+
+.user .icon-area i {
+	position: absolute;
+	left: 13px;
+	top: 69px;
+	font-size: 35px;
+	color: white;
+}
+
+.location {
+	display: flex;
+	position: relative;
+	margin-left: -2px;
+	margin-top: -22px;
+	z-index: 0;
+}
+
+.location-icon{
+	width: 57px;
+}
+
+.location .icon-area i {
+	position: absolute;
+	left: 16px;
+	top: 50px;
+	font-size: 30px;
+	color: white;
+}
+
+.location-content{
+	width: calc(100% - 57px);
+	align-self: center;
+	line-height: 1px;
+}
+
+.phone {
+	display: flex;
+	position: relative;
+	margin-left: -2px;
+	margin-top: -106px;
+	z-index: 0;
+}
+
+.phone-icon{
+	width: 57px;
+}
+.phone-content{
+	width: calc(100% - 57px);
+	align-self: center;
+	line-height: 1px;
+}
+
+.section-footer{
+	clip-path: polygon(100% 0, 100% 59%, 14% 10%, 0 11%, 0 0);
+	background-color:var(--theme-color) ;
+
+}
+
